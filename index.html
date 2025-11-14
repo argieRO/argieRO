@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Argie R. Olaso – IT Professional & Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* Background animation */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c1c1c);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      color: #f0f0f0;
+    }
+
+    .video-item {
+      width: 30%;
+      /* same width as images */
+      border-radius: 10px;
+      border: 2px solid #3498db;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: 0.3s;
+    }
+
+    .video-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .container {
+      max-width: 960px;
+      background: rgba(0, 0, 0, 0.75);
+      margin: 60px auto;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 35px;
+    }
+
+    .header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #3498db;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 2.7em;
+      margin: 0;
+      color: #00d8ff;
+      font-weight: 700;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 15px 0;
+      color: #ccc;
+    }
+
+    .contact-info i {
+      margin-right: 8px;
+      color: #3498db;
+    }
+
+    /* Sections */
+    .section {
+      margin-top: 50px;
+    }
+
+    .section h2 {
+      font-size: 1.8em;
+      color: #00d8ff;
+      border-bottom: 1px solid #555;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+
+    .section p,
+    .section ul {
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 1.2em;
+      color: #fff;
+    }
+
+    .job-period {
+      font-style: italic;
+      font-size: 0.95em;
+      color: #aaa;
+      margin-top: -5px;
+    }
+
+    /* Tags */
+    .tag {
+      display: inline-block;
+      background: #3498db;
+      color: white;
+      border-radius: 20px;
+      padding: 6px 12px;
+      font-size: 0.9em;
+      margin: 4px 6px 4px 0;
+      transition: 0.3s;
+    }
+
+    .tag:hover {
+      transform: scale(1.1);
+    }
+
+    a {
+      color: #00d8ff;
+      text-decoration: none;
+    }
+
+    /* Project Gallery */
+    .project-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .project-gallery img {
+      width: 30%;
+      border-radius: 10px;
+      border: 2px solid #3498db;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      transition: 0.3s;
+    }
+
+    .project-gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .project-gallery img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="MePic/Profpic.jpg" alt="Argie R. Olaso Photo" />
+      <div>
+        <h1>Argie R. Olaso</h1>
+        <div class="contact-info">
+          <div><i class="fas fa-flag"></i> Filipino</div>
+          <div><i class="fas fa-phone"></i> 09059511383</div>
+          <div><i class="fas fa-envelope"></i> <a href="mailto:olasoargie@gmail.com">olasoargie@gmail.com</a></div>
+          <div><i class="fas fa-map-marker-alt"></i> Brgy. Prinza, Teresa Rizal</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- INTRO -->
+    <section class="section">
+      <h2>About Me</h2>
+      <p>
+        IT professional with 9 years of hands-on experience across the entire technology landscape—
+        from hardware troubleshooting and networking, to full-stack software development and cloud integration.
+        Strong ability to bridge technical and business needs, lead support teams, and deliver practical,
+        high-impact solutions. Known for adaptability, continuous learning, and going above and beyond to solve
+        challenges.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <div>
+        <span class="tag">C#.NET</span>
+        <span class="tag">VB.NET</span>
+        <span class="tag">Python</span>
+        <span class="tag">Java</span>
+        <span class="tag">Unity</span>
+        <span class="tag">WPF & WinForms</span>
+        <span class="tag">SQL / MySQL / SQLite</span>
+        <span class="tag">API Integration</span>
+        <span class="tag">HTML / CSS / JS / PHP</span>
+        <span class="tag">TouchDesigner</span>
+        <span class="tag">PowerBI</span>
+        <span class="tag">Jaspersoft</span>
+        <span class="tag">AWS</span>
+        <span class="tag">Azure</span>
+        <span class="tag">GCP</span>
+        <span class="tag">Networking</span>
+        <span class="tag">Security</span>
+        <span class="tag">Powershell</span>
+      </div>
+    </div>
+
+    <!-- CAREER -->
+    <div class="section">
+      <h2>Career History</h2>
+
+      <p class="job-title">IT Solutions Supervisor – Projectpro, Inc.</p>
+      <p class="job-period">Feb 2022 – Present</p>
+      <ul>
+        <li>Led a multidisciplinary tech team in support, escalation, and innovation initiatives.</li>
+        <li>Migrated on-premise systems and databases to the cloud (AWS/Azure).</li>
+        <li>Developed integration solutions for Primavera P6, CostOS, and Powerproject.</li>
+        <li>Designed BI dashboards and automated reports using PowerBI and Jaspersoft.</li>
+        <li>3× “Going the Extra Mile” awardee for outstanding contributions.</li>
+      </ul>
+
+      <p class="job-title">C# / Python Developer – Wiseguys Software</p>
+      <p class="job-period">Nov 2020 – Feb 2022</p>
+      <ul>
+        <li>Developed game-show control software for Sony UK.</li>
+        <li>Built Unity prototypes (C#) and TouchDesigner visual systems (Python).</li>
+        <li>Controlled cruise ship entertainment elements including lights and FX.</li>
+      </ul>
+
+      <p class="job-title">Software Developer – IDCSI</p>
+      <p class="job-period">Apr 2018 – Nov 2020</p>
+      <ul>
+        <li>Maintained and enhanced internal systems (HR, Payroll, BIR modules).</li>
+        <li>Developed tools using VB.NET and C# for process automation.</li>
+      </ul>
+
+      <p class="job-title">Computer Technician – IDCSI</p>
+      <p class="job-period">Jun 2016 – Apr 2018</p>
+      <ul>
+        <li>Managed servers, networking equipment, and firewall configurations.</li>
+        <li>Ensured stable domain, backups, and system uptime.</li>
+      </ul>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <h2>Education</h2>
+      <p><strong>Bachelor of Science in Information Technology</strong><br>
+        Sumulong College of Arts and Sciences</p>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <h2>Milestone Projects</h2>
+
+      <h3 style="color:#00d8ff;">Who Wants to Be a Millionaire (C# Unity)</h3>
+      <p>A fully interactive quiz game built in Unity, featuring game logic, lifelines, animated UI, and sound design
+        inspired by the TV show.</p>
+
+      <div class="project-gallery">
+        <video class="video-item" controls>
+          <source src="WTTBAM/WTTBAM1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video class="video-item" controls>
+          <source src="WTTBAM/WTTBAM2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video class="video-item" controls>
+          <source src="WTTBAM/WTTBAM3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+
+      <h3 style="color:#00d8ff; margin-top:40px;">Raid the Cage (C# Unity)</h3>
+      <p>A real-time graphics system created in TouchDesigner, delivering interactive visuals and operator controls
+        based on live gameplay.</p>
+
+      <div class="project-gallery">
+        <video class="video-item" controls>
+          <source src="RTC_unity/RTC1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video class="video-item" controls>
+          <source src="RTC_unity/RTC2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+
+        <video class="video-item" controls>
+          <source src="RTC_unity/RTC3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <h3 style="color:#00d8ff; margin-top:40px;">The Voice – Cruise Ship Edition (Python TouchDesigner)</h3>
+      <p>A show-control solution designed for cruise ship entertainment, featuring animated backgrounds, lighting cues,
+        and performance visuals.</p>
+
+      <div class="project-gallery">
+        <img src="TheVoice/TV1.png">
+        <img src="TheVoice/TV2.png">
+      </div>
+
+      <!-- NEW PROJECTS -->
+
+      <h3 style="color:#00d8ff; margin-top:40px;">P6 Validator (c# Winform)</h3>
+      <p>
+        A validation and consolidation tool that gathers templated project updates,
+        checks for data accuracy, and generates a single Primavera P6–importable Excel file.
+        This significantly reduces manual processing time and streamlines construction project updating workflows.
+      </p>
+
+      <div class="project-gallery">
+        <img src="P6Validator/P6V1.png">
+        <img src="P6Validator/P6V2.png">
+        <img src="P6Validator/P6V3.png">
+      </div>
+
+
+      <h3 style="color:#00d8ff; margin-top:40px;">OPC Viewer</h3>
+      <p>
+        An integration application that uses REST API to retrieve live project data from Oracle Primavera Cloud (OPC)
+        and display it in an on-premise software interface. Designed to provide data access without needing additional
+        OPC accounts,
+        reducing licensing overhead while keeping internal teams fully informed.
+      </p>
+
+      <div class="project-gallery">
+        <img src="OPCviewer/OPV1.png">
+      </div>
+
+
+      <h3 style="color:#00d8ff; margin-top:40px;">TSGMS — Technical Service Group Management System</h3>
+      <p>
+        A web-based management system that digitizes the support team's documentation process.
+        It converts traditional paper forms into structured digital records, centralizes all support logs,
+        and improves tracking, reporting, and response efficiency across the technical service department.
+      </p>
+
+      <div class="project-gallery">
+        <img src="TSGMS/TSGMS1.png">
+        <img src="TSGMS/TSGMS2.png">
+        <img src="TSGMS/TSGMS3.png">
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
